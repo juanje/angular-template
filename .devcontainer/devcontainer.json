@@ -1,0 +1,13 @@
+{
+    "name": "Angular8 project",
+    "dockerFile": "Dockerfile",
+    //"appPort": [3000, 9222],
+    "remoteUser": "node",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postCreateCommand": "npm install",
+    "extensions": [
+        "eamodio.gitlens"
+    ]
+}
