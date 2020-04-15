@@ -9,11 +9,12 @@ OLDNAME="PROYECTO"
 FILES="angular.json \
        package.json \
        package-lock.json \
-       karma.conf.js
-       src/app/app.component.ts \
-       src/app/app.component.spec.ts \
-       e2e/src/app.e2e-spec.ts"
-FILES_CAP="README.md src/index.html"
+       karma.conf.js"
+FILES_CAP="README.md \
+           src/index.html \
+           src/app/app.component.ts \
+           src/app/app.component.spec.ts \
+           e2e/src/app.e2e-spec.ts"
 
 echo "The current project name is '${OLDNAME}', please enter the new project name:"
 read -r NEWNAME
@@ -22,7 +23,7 @@ for filename in ${FILES}; do
     sed -i "s/${OLDNAME}/${NEWNAME}/g" "${filename}"
 done
 
-OLDNAME_CAP=${OLDNAME^}
+OLDNAME_CAP=${OLDNAME}
 NEWNAME_CAP=${NEWNAME^}
 for filename in ${FILES_CAP}; do
     sed -i "s/${OLDNAME_CAP}/${NEWNAME_CAP}/g" "${filename}"
