@@ -1,6 +1,6 @@
 # PROYECTO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
 The current project name is **PROYECTO**, probably the first thing you like to do is to change it. To do that, run this script:
 
